@@ -1,3 +1,4 @@
+package readingandwritingtobinaryfiles;
 
 /**
  * This simple class is used to in a sample about 

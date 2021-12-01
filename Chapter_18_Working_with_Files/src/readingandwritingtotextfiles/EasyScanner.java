@@ -1,3 +1,4 @@
+package readingandwritingtotextfiles;
 import java.util.Scanner;
 
 public class EasyScanner 
