@@ -1,41 +1,16 @@
-package diy.studentmanager;
+package diy.studentmanager_text_file;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
 public class StudentTextFileHandler 
 {
-	public static void main(String[] args) 
-	{
-		final String FILE_NAME = "src/diy/studentmanager/Students.txt";
-		List<Student> students = new ArrayList<>();
-		
-		StudentTextFileHandler handler = new StudentTextFileHandler();
-		handler.readCharacterByCharacter(students, FILE_NAME);
-//		handler.readLineByLine(students, FILE_NAME);
-		
-//		List all students in the list
-		handler.listAll(students);
-	}
-	
-	private void listAll(List<Student> students)
-	{
-		for (Student s : students)
-		{
-			if ( s != null)
-			{
-				System.out.printf("%s %s %.1f\n",
-						s.getStudentID(),
-						s.getName(),
-						s.getDouble());
-			}
-		}
-	}
-	
 	/**
 	 * Parse a string to a Student object.
 	 * (A sample string: "s1 Alex Ferguson Sanchez 5.5")
@@ -67,7 +42,7 @@ public class StudentTextFileHandler
 	}
 	
 	/**
-	 * Use a BufferedReader object to read line by line in a text file.
+	 * Use FileRead and BufferedReader objects to read line by line from a text file.
 	 * @param students A list of Student object.
 	 * @param fileName A string represents a file name.
 	 */
@@ -96,7 +71,8 @@ public class StudentTextFileHandler
 	}
 	
 	/**
-	 * Use a BufferedReader object to read character by character in a text file.
+	 * Use FileReader and BufferedReader objects to read 
+	 * character by character from a text file.
 	 * @param students A list of Student object.
 	 * @param fileName A string represents a file name.
 	 */
@@ -112,10 +88,9 @@ public class StudentTextFileHandler
 			int ch;
 			char c;
 			
-//			Solution 1:
 			while (true)
 			{
-				ch = studentStream.read();
+				ch = studentStream.read(); // The method return -1 if the end-of-file is reached
 				c = (char) ch;
 				if ((c != '\n') && (ch != -1))
 				{
@@ -131,22 +106,6 @@ public class StudentTextFileHandler
 					break;
 				}
 			}
-			
-//			Solution 2:
-//			while ((ch = studentStream.read()) != -1)
-//			{
-//				c = (char) ch;
-//				if (c != '\n')
-//				{
-//					s += c;
-//				}
-//				else
-//				{
-//					students.add(getStudent(s));
-//					s = "";
-//				}
-//			}
-//			students.add(getStudent(s));
 		}
 		catch (FileNotFoundException e)
 		{
@@ -155,6 +114,40 @@ public class StudentTextFileHandler
 		catch (IOException e)
 		{
 			System.out.println("\nThere was a problem reading the file.");
+		}
+	}
+
+	/**
+	 * Use FileWriter and PrintWriter objects to write Student objects
+	 * from a list to a text file. (line by line)
+	 * @param students A list of Student object.
+	 * @param fileName A string represents a file name.
+	 */
+	public void writeLineByLine(List<Student> studentList, String fileName)
+	{
+		try
+		(
+			FileWriter studentFile = new FileWriter(fileName);
+			PrintWriter studentStream = new PrintWriter(studentFile);
+		)
+		{
+			for (Student item : studentList)
+			{
+				String s;
+				if (item != null)
+				{
+					s = item.getStudentID() 
+							+ " "
+							+ item.getName()
+							+ " "
+							+ item.getScore();
+					studentStream.println(s);
+				}
+			}
+		}
+		catch (IOException e)
+		{
+			System.out.println("\nThere was a problem writing the file.");
 		}
 	}
 }

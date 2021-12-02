@@ -4,12 +4,8 @@ s3 Hillay Duff 10.0
 s4 Abcd xyz hedg degh 6.7
 s5 Fernaldo Hierro 8.5
 s6 Pink Rose 10.0
-
 s8 Yellow Moon 9.4
 s9 Blue Moon 5.5
-
-
 s10 Red Diamond 9.3
-
-
 s12 Ale Laez 4.5
+s14 Harry Kewel 7.5

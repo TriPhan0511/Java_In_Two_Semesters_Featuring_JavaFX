@@ -1,4 +1,6 @@
-package diy.studentmanager;
+package diy.studentmanager_obect_serialization;
+
+import java.io.Serializable;
 
 /**
  * This class represents a student.
@@ -7,7 +9,7 @@ package diy.studentmanager;
  * @author Tri Phan
  *
  */
-public class Student 
+public class Student implements Serializable
 {
 	private String studentID;
 	private String name;
@@ -30,7 +32,7 @@ public class Student
 		return this.name;
 	}
 	
-	public double getDouble()
+	public double getScore()
 	{
 		return this.score;
 	}
