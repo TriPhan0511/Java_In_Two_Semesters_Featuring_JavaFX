@@ -32,7 +32,7 @@ public class RandomAccessFileHandler
 		)
 		{
 			
-			carFile.seek(carFile.length()); // Takes the pointer to the end of the file.
+			carFile.seek(carFile.length()); // Moves the pointer to the end of the file.
 			carFile.writeUTF(tempCar.getRegistration());
 			carFile.writeUTF(tempCar.getMake());
 			carFile.writeDouble(tempCar.getPrice());
@@ -47,15 +47,13 @@ public class RandomAccessFileHandler
 		}
 	}
 	
-	
-	
 	/**
 	 * Gets a Car object at the specified position in the file.
 	 * 
 	 * @param fileName A string represents a file name.
 	 * @return A Car object.
 	 */
-	public Car readARecord(String fileName)
+	private Car readARecord(String fileName)
 	{
 		Car tempCar = null;
 		String tempReg;
@@ -104,6 +102,11 @@ public class RandomAccessFileHandler
 		return tempCar;
 	}
 	
+	/**
+	 * Displays the information of a Car object.
+	 * 
+	 * @param fileName
+	 */
 	public void displayACar(String fileName)
 	{
 		Car tempCar = readARecord(fileName);
@@ -113,9 +116,9 @@ public class RandomAccessFileHandler
 		}
 		else
 		{
-			System.out.printf("%s %s %.1f",
-					tempCar.getRegistration(),
-					tempCar.getMake(),
+			System.out.printf("\n%s %s %.1f\n",
+					tempCar.getRegistration().trim(),
+					tempCar.getMake().trim(),
 					tempCar.getPrice());
 		}
 	}
@@ -128,17 +131,44 @@ public class RandomAccessFileHandler
 	 */
 	private Car createACar()
 	{
-		Car tempCar = null;
 		String tempReg;
 		String tempMake;
 		double tempPrice;
 		
-		tempReg = EasyScanner.nextString("\nEnter the registration number of the car: ");
-		tempMake = EasyScanner.nextString("Enter the make of the car: ");
+		tempReg = getTenCharacters("\nEnter the registration number of the car: ");
+		tempMake = getTenCharacters("Enter the make of the car: ");
 		tempPrice = EasyScanner.nextDouble("Enter the price of the car: ");
-		tempCar = new Car(tempReg, tempMake, tempPrice);
 		
-		return tempCar;
+		return new Car(tempReg, tempMake, tempPrice);
+	}
+	
+	/**
+	 * Gets a string whose length is 10.
+	 * 
+	 * 
+	 * @param prompt Ask the user enter data.
+	 * @return A string.
+	 */
+	private String getTenCharacters(String prompt)
+	{
+		String s;
+		while (true)
+		{
+			s = EasyScanner.nextString(prompt);
+			if (s.length() > 10)
+			{
+				System.out.println("Ten characters only. Please re-enter.");
+			}
+			else
+			{
+//				Pads some spaces if the input string has characters less than 10
+				for (int i = s.length() + 1; i <= 10; i++)
+				{
+					s = s.concat(" ");
+				}
+				return s;
+			}
+		}
 	}
 }
 
