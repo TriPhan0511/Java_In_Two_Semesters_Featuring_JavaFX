@@ -1,0 +1,12 @@
+Registration Number: A297 ABF
+Make: Ford
+Price: 4560.0
+
+Registration Number: U423 GAX
+Make: Vauxhall
+Price: 5999.0
+
+Registration Number: T945 KMN
+Make: Citroen
+Price: 3795.0
+

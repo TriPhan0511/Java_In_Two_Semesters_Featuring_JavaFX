@@ -9,6 +9,12 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
+//Sample Students.txt: 
+
+//s1 Alex Ferguson Sanchez 5.5
+//s2 Brad 9.5
+//s3 Hillay Duff 10.0
+
 public class StudentTextFileHandler 
 {
 	/**
