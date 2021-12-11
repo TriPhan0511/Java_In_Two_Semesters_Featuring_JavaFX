@@ -66,7 +66,7 @@ package lambdaExpressionSamples;
  * which expression is used.
  */
 
-public class TestApp 
+public class Introduction 
 {
 	public static void main(String[] args)
 	{

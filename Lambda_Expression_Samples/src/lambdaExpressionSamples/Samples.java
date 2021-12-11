@@ -5,7 +5,7 @@ import java.util.List;
 
 import javax.swing.JButton;
 
-public class Sample1 
+public class Samples 
 {
 	public static void main(String[] args)
 	{
