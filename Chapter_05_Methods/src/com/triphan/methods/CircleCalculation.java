@@ -11,10 +11,9 @@ import java.util.Scanner;
  */
 public class CircleCalculation 
 {
-	private static Scanner keyboard = new Scanner(System.in);
-	
 	public static void main(String[] args) 
 	{
+		Scanner keyboard = new Scanner(System.in);
 		char choice;
 //		Initialize the radius with a dummy value to show that nothing has been entered
 		double radius = -999; 
@@ -50,6 +49,7 @@ public class CircleCalculation
 	
 	private static double getRadius()
 	{
+		Scanner keyboard = new Scanner(System.in);
 		System.out.print("\nEnter a radius: ");
 		return keyboard.nextDouble();
 	}
