@@ -1,31 +1,9 @@
-package com.triphan.arrays.samples;
+package com.triphan.arrays.oneDimesionalArray;
 
 import java.util.Scanner;
 
 public class TemperatureReadings 
 {
-//	public static void main(String[] args) 
-//	{
-//		Scanner keyboard = new Scanner(System.in);
-//		double[] temperature = new double[7];
-//		
-////		Enters temperatures
-//		for (int i = 0; i < temperature.length; i++)
-//		{
-//			System.out.print("Enter max temperature for day " + (i + 1) + ": ");
-//			temperature[i] = keyboard.nextDouble();
-//		}
-//		
-////		Displays the temperatures
-//		System.out.println("\n*** TEMPERATURES ENTERED ***");
-//		for (int i = 0; i < temperature.length; i++)
-//		{
-//			System.out.println("Day " + (i + 1) + " " + temperature[i]);
-//		}
-//	}
-	
-//	------------------------------------------------------------------------------------------------
-	
 	public static void main(String[] args) 
 	{
 		double[] temps = new double[7];

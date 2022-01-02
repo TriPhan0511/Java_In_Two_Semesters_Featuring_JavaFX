@@ -1,4 +1,4 @@
-package com.triphan.arrays.samples;
+package com.triphan.arrays.oneDimesionalArray;
 
 /**
  * This sample illustrates about varargs.

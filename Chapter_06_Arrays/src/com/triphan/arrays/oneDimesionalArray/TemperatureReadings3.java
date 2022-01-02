@@ -1,4 +1,4 @@
-package com.triphan.arrays.samples;
+package com.triphan.arrays.oneDimesionalArray;
 
 import java.util.Scanner;
 
@@ -32,15 +32,6 @@ public class TemperatureReadings3
 			System.out.println(item);
 		}
 	}
-	
-//	private static void displayTemps(double... temps)
-//	{
-//		System.out.println();
-//		for (int i = 0; i < temps.length; i++)
-//		{
-//			System.out.println("Day " + (i + 1) + ": " + temps[i]);
-//		}
-//	}
 }
 
 
