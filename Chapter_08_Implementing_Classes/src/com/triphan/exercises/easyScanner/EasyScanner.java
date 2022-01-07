@@ -1,4 +1,4 @@
-package com.triphan.exercises;
+package com.triphan.exercises.easyScanner;
 
 import java.util.Scanner;
 

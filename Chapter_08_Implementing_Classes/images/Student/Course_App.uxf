@@ -6,8 +6,8 @@
     <coordinates>
       <x>78</x>
       <y>117</y>
-      <w>351</w>
-      <h>455</h>
+      <w>286</w>
+      <h>416</h>
     </coordinates>
     <panel_attributes>Student
 --
@@ -26,6 +26,7 @@ _-fee : double_
 +getScienceMark() : int
 +enterMarks(int, int, int)
 +calculateAverageMark() : double
++displayStudent()
 _+getFee() : double_
 _+setFee(double)_
 </panel_attributes>
@@ -34,20 +35,42 @@ _+setFee(double)_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>585</x>
-      <y>130</y>
-      <w>390</w>
-      <h>442</h>
+      <x>416</x>
+      <y>117</y>
+      <w>364</w>
+      <h>273</h>
     </coordinates>
     <panel_attributes>Course
 --
 -list : ArrayList&lt;Student&gt;
 --
 -search(String) : int
-+getItem(String) : Student
 +addStudent(String, String) : boolean
++getItem(String) : Student
++displayStudent(String)
++displayListOfStudents()
 +updateMarks(String, int, int, int) : boolean
 +removeStudent(String) : boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>832</x>
+      <y>117</y>
+      <w>351</w>
+      <h>325</h>
+    </coordinates>
+    <panel_attributes>CourseApplication
+--
+--
+_+main(String[])_
++addStudent(Course)
++displayStudent(Course)
++displayListOfStudents(Course)
++updateMarks(Course)
++updateFee(Course)
++removeStudent(Course)</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

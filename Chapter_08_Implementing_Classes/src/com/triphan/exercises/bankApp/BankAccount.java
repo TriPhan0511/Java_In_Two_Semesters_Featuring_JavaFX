@@ -1,4 +1,4 @@
-package com.triphan.exercises;
+package com.triphan.exercises.bankApp;
 
 public class BankAccount
 {

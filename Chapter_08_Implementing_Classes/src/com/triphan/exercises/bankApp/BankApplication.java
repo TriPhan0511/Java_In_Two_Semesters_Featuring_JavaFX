@@ -1,4 +1,6 @@
-package com.triphan.exercises;
+package com.triphan.exercises.bankApp;
+
+import com.triphan.exercises.easyScanner.EasyScanner;
 
 public class BankApplication
 {

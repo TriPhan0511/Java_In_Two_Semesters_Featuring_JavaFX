@@ -1,8 +1,10 @@
-package com.triphan.exercises;
+package com.triphan.exercises.circularShapeApp;
 
 public class CircularShape
 {
   private double radius;
+
+//  public CircularShape(){}
 
   public CircularShape(double radius)
   {
