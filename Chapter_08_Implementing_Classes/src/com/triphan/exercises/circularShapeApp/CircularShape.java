@@ -1,5 +1,6 @@
 package com.triphan.exercises.circularShapeApp;
 
+// Exercise: chapter 08 Implementing classes / exercise 01
 public class CircularShape
 {
   private double radius;

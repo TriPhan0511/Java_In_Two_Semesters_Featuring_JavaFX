@@ -1,5 +1,6 @@
 package com.triphan.exercises.apartmentApp;
 
+// Exercise: chapter 08 Implementing classes / exercise 07
 public class Oblong
 {
   private double length;

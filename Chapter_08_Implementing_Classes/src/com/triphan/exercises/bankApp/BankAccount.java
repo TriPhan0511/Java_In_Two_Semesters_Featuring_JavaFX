@@ -1,5 +1,6 @@
 package com.triphan.exercises.bankApp;
 
+// Exercise: chapter 08 Implementing classes / exercise 06
 public class BankAccount
 {
 //  The attributes

@@ -2,6 +2,7 @@ package com.triphan.exercises.bankApp;
 
 import com.triphan.exercises.easyScanner.EasyScanner;
 
+// Exercise: chapter 08 Implementing classes / exercise 06
 public class BankApplication
 {
   public static void main(String[] args)

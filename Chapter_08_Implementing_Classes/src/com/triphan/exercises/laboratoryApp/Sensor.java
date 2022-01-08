@@ -1,5 +1,6 @@
 package com.triphan.exercises.laboratoryApp;
 
+// Exercise: chapter 08 Implementing classes / exercise 04
 public class Sensor
 {
   private double pressure;

@@ -2,6 +2,7 @@ package com.triphan.exercises.circularShapeApp;
 
 import com.triphan.exercises.easyScanner.EasyScanner;
 
+// Exercise: chapter 08 Implementing classes / exercise 01
 public class CircularShapeTester
 {
   public static void main(String[] args)

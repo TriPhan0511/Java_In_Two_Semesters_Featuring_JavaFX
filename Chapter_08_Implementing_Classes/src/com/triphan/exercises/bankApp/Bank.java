@@ -2,6 +2,7 @@ package com.triphan.exercises.bankApp;
 
 import java.util.ArrayList;
 
+// Exercise: chapter 08 Implementing classes / exercise 06
 public class Bank
 {
   private ArrayList<BankAccount> list = new ArrayList<>();

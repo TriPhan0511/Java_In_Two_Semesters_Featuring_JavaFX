@@ -2,6 +2,7 @@ package com.triphan.exercises.apartmentApp;
 
 import java.util.ArrayList;
 
+// Exercise: chapter 08 Implementing classes / exercise 07
 public class Apartment
 {
   private ArrayList<Oblong> rooms = new ArrayList<>();

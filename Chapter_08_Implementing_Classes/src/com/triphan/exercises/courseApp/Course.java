@@ -2,6 +2,7 @@ package com.triphan.exercises.courseApp;
 
 import java.util.ArrayList;
 
+// Exercise: chapter 08 Implementing classes / exercise 02
 public class Course
 {
   private ArrayList<Student> list = new ArrayList<>();

@@ -1,5 +1,6 @@
 package com.triphan.exercises.applianceApp;
 
+// Exercise: chapter 08 Implementing classes / exercise 03
 public class StockItem
 {
   private String stockNumber;

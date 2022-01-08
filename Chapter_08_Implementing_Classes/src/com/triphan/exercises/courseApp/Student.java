@@ -1,5 +1,6 @@
 package com.triphan.exercises.courseApp;
 
+// Exercise: chapter 08 Implementing classes / exercise 02
 public class Student
 {
   private String studentNumber;

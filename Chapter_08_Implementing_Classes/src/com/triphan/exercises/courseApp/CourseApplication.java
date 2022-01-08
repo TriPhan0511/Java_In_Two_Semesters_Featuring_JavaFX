@@ -2,6 +2,7 @@ package com.triphan.exercises.courseApp;
 
 import com.triphan.exercises.easyScanner.EasyScanner;
 
+// Exercise: chapter 08 Implementing classes / exercise 02
 public class CourseApplication
 {
   public static void main(String[] args)

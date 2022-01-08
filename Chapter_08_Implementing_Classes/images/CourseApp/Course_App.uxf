@@ -59,7 +59,7 @@ _+setFee(double)_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>416</x>
+      <x>572</x>
       <y>117</y>
       <w>364</w>
       <h>273</h>
@@ -80,8 +80,8 @@ _+setFee(double)_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>832</x>
-      <y>117</y>
+      <x>598</x>
+      <y>559</y>
       <w>351</w>
       <h>325</h>
     </coordinates>
@@ -97,5 +97,17 @@ _-updateMarks(Course)_
 _-updateFee(Course)_
 _-removeStudent(Course)_</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>351</x>
+      <y>195</y>
+      <w>247</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=*</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
   </element>
 </diagram>

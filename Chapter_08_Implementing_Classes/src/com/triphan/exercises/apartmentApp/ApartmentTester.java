@@ -2,6 +2,7 @@ package com.triphan.exercises.apartmentApp;
 
 import com.triphan.exercises.easyScanner.EasyScanner;
 
+// Exercise: chapter 08 Implementing classes / exercise 07
 public class ApartmentTester
 {
   public static void main(String[] args)

@@ -2,6 +2,7 @@ package com.triphan.exercises.applianceApp;
 
 import com.triphan.exercises.easyScanner.EasyScanner;
 
+// Exercise: chapter 08 Implementing classes / exercise 03
 public class StockItemTester
 {
   public static void main(String[] args)
