@@ -2,34 +2,11 @@ package com.triphan.exercises.courseApp;
 
 import java.util.ArrayList;
 
-public class Course
+public class Course_0
 {
   private ArrayList<Student> list = new ArrayList<>();
-  private double courseFee = 0.0;
 
-  public Course()
-  {
-    Student.setFee(courseFee);
-  }
-
-  public Course(double fee)
-  {
-    courseFee = fee;
-    Student.setFee(courseFee);
-  }
-
-  public double getCourseFee()
-  {
-    return courseFee;
-  }
-
-  public void setCourseFee(double courseFee)
-  {
-    this.courseFee = courseFee;
-    Student.setFee(courseFee);
-  }
-
-  //  Find the index of a particular student within the list.
+//  Find the index of a particular student within the list.
   private int search(String studentNumber)
   {
     for (int i = 0; i < list.size(); i++)

@@ -7,7 +7,7 @@ public class Student
   private int markForMaths;
   private int markForEnglish;
   private int markForScience;
-  private static double fee = 30000.0;
+  private static double fee = 3000.0;
 
   public Student(String number, String name)
   {
@@ -104,8 +104,10 @@ public class Student
     else
     {
       System.out.printf("The average mark: %.1f", averageMark);
+      System.out.println();
     }
     System.out.printf("Fee: %.2f", getFee());
+    System.out.println();
   }
 
   public static double getFee()
@@ -113,7 +115,7 @@ public class Student
     return fee;
   }
 
-  public void setFee(double fee)
+  public static void setFee(double fee)
   {
     Student.fee = fee;
   }

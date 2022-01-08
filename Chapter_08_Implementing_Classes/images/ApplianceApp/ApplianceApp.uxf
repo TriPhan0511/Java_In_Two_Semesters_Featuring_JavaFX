@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>13</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>351</x>
+      <y>169</y>
+      <w>416</w>
+      <h>403</h>
+    </coordinates>
+    <panel_attributes>StockItem
+--
+-stockNumber : String
+-name : String
+-price : double
+-totalStock : int
+_-salesTax : double_
+--
++StockItem(String, String, double)
++getStockNumber() : String
++getName() : String
++getTotalStock() : int
++getPrice() : double
+_+getSalesTax : double_
++setPrice(double)
+_+setSalesTax(double)_
++increaseTotalStock(int)
++calculateTotalPrice() : double</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

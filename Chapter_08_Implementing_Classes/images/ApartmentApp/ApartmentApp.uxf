@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <help_text/>
+  <zoom_level>13</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>741</x>
+      <y>169</y>
+      <w>442</w>
+      <h>286</h>
+    </coordinates>
+    <panel_attributes>Oblong
+--
+-length : double
+-height : double
+--
++Oblong(double, double)
++getLength() : double
++getHeight() : double
++setLength() : double
++setHeight() : double
++calculateArea() : double
++calculatePerimeter() : double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>143</x>
+      <y>169</y>
+      <w>351</w>
+      <h>182</h>
+    </coordinates>
+    <panel_attributes>Apartment
+--
+-rooms : ArrayList&lt;Oblong&gt;
+--
++add(Room)
++getRoomArea(int) : double
++getRoomLength(int) : double
++getRoomHeight(int) : double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>481</x>
+      <y>286</y>
+      <w>286</w>
+      <h>65</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>130</x>
+      <y>390</y>
+      <w>364</w>
+      <h>221</h>
+    </coordinates>
+    <panel_attributes>ApartmentTester
+--
+--
++main(String[])
+_-addRoom(Apartment)_
+_-displayRoomArea(Apartment)_
+_-displayRoomLength(Apartment)_
+_-displayRoomHeight(Apartment)_
+_-displayRoomsDetails(Apartment)_</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

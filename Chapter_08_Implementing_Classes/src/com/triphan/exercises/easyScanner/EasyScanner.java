@@ -27,4 +27,37 @@ public class EasyScanner
     Scanner keyboard = new Scanner(System.in);
     return keyboard.next().charAt(0);
   }
+
+  public static byte nextByte()
+  {
+    Scanner keyboard = new Scanner(System.in);
+    return keyboard.nextByte();
+  }
+
+  public static long nextLong()
+  {
+    Scanner keyboard = new Scanner(System.in);
+    return keyboard.nextLong();
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
