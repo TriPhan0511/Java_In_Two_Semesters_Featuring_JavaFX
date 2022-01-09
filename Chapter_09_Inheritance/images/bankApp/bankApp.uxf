@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>13</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>598</x>
+      <y>52</y>
+      <w>312</w>
+      <h>273</h>
+    </coordinates>
+    <panel_attributes>BankAccount
+--
+-accountNumber : String
+-accountName : String
+#balance : double
+--
++BankAccount(String, String)
++getNumber() : String
++getName() : String
++getBalance() : double
++deposit(double)
++withdraw(double) : boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>598</x>
+      <y>403</y>
+      <w>325</w>
+      <h>169</h>
+    </coordinates>
+    <panel_attributes>GoldAccount
+--
+-overdraftLimit : double
+--
++GoldAccount(String, String, double)
++getLimit() : double
++setLimit(double)
++withdraw(double) : boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>741</x>
+      <y>312</y>
+      <w>39</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+</diagram>
