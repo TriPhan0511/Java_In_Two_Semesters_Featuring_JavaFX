@@ -4,48 +4,46 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>546</x>
-      <y>78</y>
+      <x>520</x>
+      <y>143</y>
       <w>273</w>
-      <h>247</h>
+      <h>156</h>
     </coordinates>
-    <panel_attributes>Oblong
+    <panel_attributes>/Sensor/
 --
--length : double
--height : double
+-pressure : double
 --
-+Oblong(double, double)
-+setLength(double)
-+setHeight(double)
-+getLength() : double
-+getHeight() : double
-+calculateArea() : double
-+calculatePerimeter() : double
-</panel_attributes>
++Sensor()
++Sensor(double)
++getPressure() : double
+/+setPressure(double) : boolean/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>546</x>
-      <y>429</y>
-      <w>338</w>
-      <h>143</h>
+      <x>520</x>
+      <y>403</y>
+      <w>273</w>
+      <h>156</h>
     </coordinates>
-    <panel_attributes>ExtendedOblong
+    <panel_attributes>SafeSensor
 --
--symbol : char
+-max : double
 --
-+ExtendedOblong(double, double, char)
-+setSymbol(char)
-+draw() : String</panel_attributes>
++SafeSensor(double)
++SafeSensor(double, double)
++setPressure(double) : boolean
++getMax() : double
+
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>663</x>
-      <y>312</y>
+      <x>650</x>
+      <y>286</y>
       <w>39</w>
       <h>143</h>
     </coordinates>
