@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>13</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>494</x>
+      <y>117</y>
+      <w>312</w>
+      <h>286</h>
+    </coordinates>
+    <panel_attributes>Vehicle
+--
+-regNo : String
+-make : String
+-yearOfManufacture : int
+-value : double
+--
++Vehicle(String, String, int, double)
++getRegNo() : String
++getMake() : String
++getYearOfManufacture() : int
++getValue() : double
++setValue(double)
++calculateAge(int) : int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>429</x>
+      <y>507</y>
+      <w>429</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>SecondHandVehicle
+--
+-numberOfOwners : int
+--
++SecondHandVehicle(String, String, int, double, int)
++getNumberOfOwners() : int
++hasMultipleOwners() : boolean </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>390</y>
+      <w>39</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+</diagram>

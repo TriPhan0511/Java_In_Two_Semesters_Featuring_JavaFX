@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>13</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>143</y>
+      <w>273</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>/Sensor/
+--
+-pressure : double
+--
++Sensor()
++Sensor(double)
++getPressure() : double
+/+setPressure(double) : boolean/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>403</y>
+      <w>273</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>SafeSensor
+--
+-max : double
+--
++SafeSensor(double)
++SafeSensor(double, double)
++setPressure(double) : boolean
++getMax() : double
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>286</y>
+      <w>39</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+</diagram>
